@@ -1,13 +1,13 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
+        title: 'mau pake backsound?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Iya',
+        cancelButtonText: 'Gak',
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
@@ -85,33 +85,33 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3")
-    .from(".four", 0.7, {
-        scale: 0.2,
-        opacity: 0,
-    })
-    .from(".fake-btn", 0.3, {
-        scale: 0.2,
-        opacity: 0,
-    })
-    .staggerTo(
-        ".hbd-chatbox span",
-        1.5, {
-            visibility: "visible",
-        },
-        0.05
-    )
-    .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
-    },
-    "+=4")
-    .to(
-        ".four",
-        0.5, {
+        "+=3")
+        .from(".four", 0.7, {
             scale: 0.2,
             opacity: 0,
-            y: -150
+        })
+        .from(".fake-btn", 0.3, {
+            scale: 0.2,
+            opacity: 0,
+        })
+        .staggerTo(
+            ".hbd-chatbox span",
+            1.5, {
+                visibility: "visible",
+            },
+            0.05
+        )
+        .to(".fake-btn", 0.1, {
+            backgroundColor: "rgb(127, 206, 248)",
         },
+        "+=4")
+        .to(
+            ".four",
+            0.5, {
+                scale: 0.2,
+                opacity: 0,
+                y: -150
+            },
     "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
