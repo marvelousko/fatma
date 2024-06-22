@@ -76,21 +76,21 @@ body {
   right: 0;
 }
 
-.idea-3 strong {
+.idea-2 strong {
   border-radius: 3px;
   display: inline-block;
   padding: 3px 5px;
 }
 
-.five .idea-5 {
+.five .idea-4 {
   font-size: 4rem;
 }
 
-.idea-5 span, .idea-6 span, .wish-hbd span {
+.idea-4 span, .idea-5 span, .wish-hbd span {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-5 span{
   font-size: 15rem;
 }
 
@@ -264,11 +264,11 @@ body {
     right: 5px;
   }
 
-  .idea-5 span {
+  .idea-4 span {
     display: block;
   }
 
-  .idea-6 span {
+  .idea-5 span {
     font-size: 10rem;
   }
 
